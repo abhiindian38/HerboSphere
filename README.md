@@ -23,4 +23,77 @@ The project aims to make the rich knowledge of traditional herbal practices acce
 📖 Learn More
 This project is developed with the vision of blending technology and tradition, ensuring the preservation and propagation of ancient herbal knowledge. Users can interact with 3D plants, take guided tours, and access detailed plant information, making it a comprehensive tool for students, practitioners, and enthusiasts of AYUSH.
 
+🚀 How to Execute This Project
+Follow the steps below to set up and execute the Virtual Herbal Garden project on your local machine.
+
+Prerequisites
+Ensure the following tools are installed on your system:
+
+Node.js (v14.0.0 or above)
+MongoDB (local or cloud instance)
+Git
+Browser (latest version of Chrome, Firefox, or Edge)
+Steps to Run
+Clone the Repository
+
+bash
+Copy
+Edit
+git clone https://github.com/<your-username>/virtual-herbal-garden.git
+cd virtual-herbal-garden
+Install Dependencies
+Navigate to both the frontend and backend folders and install dependencies:
+
+For the frontend:
+bash
+Copy
+Edit
+cd frontend
+npm install
+For the backend:
+bash
+Copy
+Edit
+cd backend
+npm install
+Configure Environment Variables
+Create a .env file in the backend directory and provide the following details:
+
+env
+Copy
+Edit
+PORT=5000
+MONGO_URI=<Your MongoDB Connection String>
+GOOGLE_TRANSLATE_API_KEY=<Your Google Cloud Translate API Key>
+Start MongoDB
+
+If using a local MongoDB instance, ensure it is running by executing:
+bash
+Copy
+Edit
+mongod
+Run the Backend
+Start the backend server:
+
+bash
+Copy
+Edit
+cd backend
+npm start
+Run the Frontend
+Open a new terminal and start the frontend server:
+
+bash
+Copy
+Edit
+cd frontend
+npm start
+Access the Application
+
+Open your browser and navigate to:
+plaintext
+Copy
+Edit
+http://localhost:3000
+
 Feel free to fork, star, and contribute to this project! 😊
