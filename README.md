@@ -10,6 +10,7 @@ Herbal Remedies TV: Discover natural solutions and insights into healthier lifes
 Community Forum: Engage in discussions, share healing experiences, and exchange remedies with like-minded enthusiasts.
 E-Commerce Integration: Order medicinal plants directly from the platform for easy access.
 Chatbot Assistance: Get personalized plant and remedy recommendations for specific health concerns.
+
 🛠️ Tech Stack
 Frontend: ReactJS, ThreeJS, JavaScript, CSS, Material-UI
 Backend: Node.js, Express.js, MongoDB
