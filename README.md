@@ -29,11 +29,17 @@ Follow the steps below to set up and execute the Virtual Herbal Garden project o
 Prerequisites
 Ensure the following tools are installed on your system:
 
+
 Node.js (v14.0.0 or above)
+
 MongoDB (local or cloud instance)
+
 Git
+
 Browser (latest version of Chrome, Firefox, or Edge)
+
 Steps to Run
+
 Clone the Repository
 
 bash
