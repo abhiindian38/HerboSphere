@@ -1,0 +1,65 @@
+#rotating-images {
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .rotating-images-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .rotating-images-track {
+    display: flex;
+    animation: slide 20s linear infinite;
+  }
+
+
+h2 {
+  font-size: 2.5em;
+  margin-top: 20px;
+  color: #004d40;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 700; 
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+
+h2:hover {
+  color: #00796b;
+  transform: translateY(-3px);
+}
+
+  
+  .rotating-images-track img {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    margin-right: 20px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .overlay p {
+    margin: 0;
+    font-size: 1.1rem; 
+    font-weight: 600;
+    color:#1b6617; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+    line-height: 1.5; 
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6); 
+}

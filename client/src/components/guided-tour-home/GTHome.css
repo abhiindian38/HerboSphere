@@ -1,0 +1,22 @@
+.guided-tour-home {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .disease-categories {
+    margin-top: 20px;
+  }
+  
+  .disease-options li:hover {
+    background-color: #e0f7fa;
+    cursor: pointer;
+  }
+  
+  .active {
+    font-weight: bold;
+    color: #1976d2;
+  }
+  

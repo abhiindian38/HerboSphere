@@ -1,0 +1,254 @@
+.remedy-sharing {
+   
+    display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.board-title {
+    font-size: 2.5rem;
+    color: #4A7729;
+    text-align: center;
+  margin: 1rem 0;
+}
+
+.remedy-board {
+    margin-top: 20px;
+    flex: 1; /* Takes up remaining space */
+  padding: 1rem;
+}
+
+.remedy-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.star {
+    color: #d6bbbb;
+    font-size: 1rem;
+    margin-bottom : 13px;
+    margin-left : 10px;
+}
+
+.star.filled {
+    color: #ff6f61;
+}
+
+.interaction-buttons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4A7729;
+}
+
+.comment-icon:hover,
+.save-icon:hover {
+    color: #ff6f61;
+}
+
+.add-remedy-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4A7729;
+    color: white;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+
+
+.modal-container {
+    background-color: #f3f5f1;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90vh;
+    overflow-y: auto;
+    background-image: url('https://i.pinimg.com/originals/8d/66/13/8d6613ac18d94e43465b342f6705508a.jpg');
+    background-size: cover;
+    background-color: #f3f5f1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-container .modal-content .modal-title  {
+    color: #335b16;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.remedy-label {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.remedy-input,
+.remedy-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    background-color: #f3f5f1;
+}
+.remedy-preview {
+    background-color: #f0f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #378237;
+    position: relative;
+bottom: 15px;
+    left: 90px; 
+    background-color: #f0f5e9;
+    padding: 15px;
+    border-radius: 8px;
+    border : 1px solid black;
+    box-shadow: 1px 4px 8px rgba(47, 33, 33, 0.1);
+    max-width: 250px;
+    max-height: 300px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.remedy-preview p {
+    color: rgb(14, 46, 14);
+}
+
+
+.submit-btn {
+    background-color: #4b742d;
+    color: #fff;
+    width: 25%;
+    padding: 10px 0;
+    display: flex;
+
+}
+
+
+
+.submit-btn:hover {
+    background-color: #3d6530;
+}
+
+.remedy-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.remedy-item {
+    background-color: #eef6ee;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* width: calc(33% - 1rem);  */
+    width: 350px;
+    margin-bottom: 20px;
+    position: relative;
+    border: 1px solid #4A7729;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.remedy-name {
+    color: #2E5733;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.leaf-icon {
+    margin-right: 8px;
+    color: #4A7729;
+}
+
+.rating-section {
+    display: flex;
+    align-items: center;
+}
+
+
+.icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.comment-icon,
+.save-icon {
+    color: #2E5733;
+}
+
+.floating-btn {
+    background-color: #4A7729;
+    color: white;
+    font-weight: bold;
+
+
+    position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #082924;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.floating-btn:hover {
+    background-color: #3d6530;
+}
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .success-popup {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

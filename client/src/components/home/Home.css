@@ -1,0 +1,365 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  border-bottom: 3px solid #1b6617;
+}
+
+.header-content {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 30px;
+  animation: fadeInLeft 1s ease-out;
+}
+
+.header-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #047501;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.header-title .highlight {
+  color: #0e5f27;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px #96c8b4;
+}
+
+.header-subtitle {
+  font-size: 1.75rem;
+  color: #116c2a;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.header-subtitle .highlight {
+  color: #2c4e31;
+  font-weight: 700;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 25px;
+}
+
+.cta-button {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button.learn-more {
+  background-color: #44bd57;
+  color: #fff;
+}
+
+.cta-button.start-quiz {
+  background-color: #17664c;
+  color: #fff;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.model-viewer-container {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 30px;
+  animation: fadeInRight 1s ease-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  height : 90vh;
+   background-size: cover;
+  background-image: url('https://wallpapersbyt.ca/cdn/shop/products/pickthisone2.jpg?v=1648671769');
+  border-bottom: none;
+  margin-bottom: 0; 
+}
+
+.model-viewer-container {
+  flex: 1;
+  max-width: 50%;
+  padding-left: 30px;
+  animation: fadeInRight 1s ease-out;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+
+header, .header-content, .model-viewer-container, .products-container {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.dosha-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.dosha-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.dosha-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  margin: 20px;
+}
+
+.dosha-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dosha-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.dosha-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.dosha-name {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.dosha-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.dosha-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.dosha-section h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #1b6617;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.3;
+}
+
+.dosha-description {
+  font-size: 1.25em;
+  color: #555;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 1s forwards; 
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+
+.dosha-description:hover {
+  color: #333; 
+  transform: scale(1.02);
+  transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+.dosha-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.dosha-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.dosha-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dosha-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dosha-content {
+  padding: 20px;
+}
+
+.dosha-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1b6617;
+  margin-bottom: 10px;
+}
+
+.dosha-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+.dosha-section {
+  background-color: #f0f9f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.dosha-section h2 {
+  font-size: 2.5rem;
+  color: #2e865f;
+  margin-bottom: 20px;
+}
+
+.dosha-section .dosha-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.dosha-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dosha-card {
+  perspective: 1000px; 
+  flex: 1;
+  min-width: 280px;
+  height: 350px;
+}
+
+.dosha-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.dosha-card:hover .dosha-card-inner {
+  transform: rotateY(180deg); 
+}
+
+.dosha-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.dosha-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+.dosha-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  backface-visibility: hidden; 
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dosha-name {
+  font-size: 1.8rem;
+  color: #2e865f;
+  margin-bottom: 10px;
+}
+
+.dosha-description {
+  font-size: 1rem;
+  color: #777;
+  text-align: center;
+}
+
+.cta-button {
+  background-color: #2e865f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8bc34a;
+}

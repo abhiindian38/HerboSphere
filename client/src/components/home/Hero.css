@@ -1,0 +1,43 @@
+/* Home.css */
+.hero-section {
+    background-image: url('https://img.freepik.com/premium-photo/nature-green-leaf-garden-summer-natural-hd-background-wallpaper-desktop-wallpaper_927498-14725.jpg?w=1060');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .hero-description {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-cta-button {
+    background-color: #8BC34A; 
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .hero-cta-button:hover {
+    background-color: #6DAF3A;
+  }
+  

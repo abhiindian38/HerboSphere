@@ -1,0 +1,136 @@
+.register-container {
+  font-family: 'Roboto', sans-serif;
+  color: #2d572c;
+  padding: 20px;
+  max-width: 100vw;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #e4f7e3 0%, #d2f3c4 100%);
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVWYDLr9xyyajkGtXxYrDLr-q7uJVTU8Rz0Q&s');
+}
+
+.register-header {
+  font-size: 2.5rem;
+  color: #2d572c;
+  background: #c8e6c9;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  animation: pulse 1.5s infinite;
+}
+
+.register-form-container {
+  background: #e8f5e9;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  color: #2d572c;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #627f63;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f1f8e9;
+}
+
+.validation-error {
+  font-size: 1rem;
+  color: #d32f2f;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #388e3c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1b5e20;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.progress-bar-container {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #57b35f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.progress-bar {
+  height: 20px;
+  background-color: #66bb6a;
+  width: 0;
+  transition: width 0.4s ease;
+}
+
+.progress-message {
+  font-size: 1rem;
+  color: #388e3c;
+  margin-top: 10px;
+}
+
+
+.progress {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+
+.progress-bar {
+  background-color: #225722;
+  transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+  box-shadow: none;
+  border-color: #225722;
+}
+

@@ -1,0 +1,293 @@
+/* Container for the Herbal Knowledge Hub */
+.herbal-knowledge-hub {
+    background: linear-gradient(to bottom right, #e0f2f1, #c8e6c9);
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Toggle button styling */
+  .toggle-button {
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: #004d40;
+    transform: scale(1.05);
+  }
+  
+  /* Header styling */
+  .hub-header {
+    margin-bottom: 40px;
+  }
+  
+  .hub-header h2 {
+    font-size: 2.8rem;
+    color: #004d40;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hub-header h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 4px;
+    background: #004d40;
+    border-radius: 2px;
+  }
+  
+  /* Paragraph styling */
+  .hub-header p {
+    font-size: 1.1rem;
+    color: #004d40;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* New Thread Container */
+  .new-thread-container {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    margin: 0 auto 40px;
+    max-width: 700px;
+    text-align: left;
+    position: relative;
+  }
+  
+  /* New Thread Form */
+  .new-thread-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input-field,
+  .textarea-field {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field:focus,
+  .textarea-field:focus {
+    border-color: #00796b;
+    outline: none;
+  }
+  
+  .textarea-field {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-button {
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #004d40;
+  }
+  
+  /* Thread List */
+  .thread-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Thread Card */
+  .thread-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .thread-card:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Thread Image */
+  .thread-image-wrapper {
+    flex: 0 0 40%;
+  }
+  
+  .thread-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Thread Content */
+  .thread-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Thread Owner */
+  .thread-owner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .owner-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .owner-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .owner-name {
+    font-weight: bold;
+    font-size : 1.3rem;
+  }
+  
+  .owner-badges {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .badge {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+  }
+  
+  /* Thread Title */
+  .thread-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #00796b;
+    cursor: pointer;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .thread-title:hover {
+    color: #004d40;
+  }
+  
+  /* Thread Description */
+  .thread-description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Comments Section */
+  .thread-comments {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .comment {
+    font-size: 1rem;
+    background: #f1f8f4;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .comment-user {
+    font-weight: bold;
+  }
+  
+  .no-comments {
+    font-style: italic;
+    color: #777;
+  }
+  
+  .comment-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .comment-button {
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-button:hover {
+    background-color: #004d40;
+  }
+/* Badge Popup Styling */
+.badge-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .badge-popup-image {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+    

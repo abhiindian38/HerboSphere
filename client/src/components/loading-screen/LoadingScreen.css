@@ -1,0 +1,31 @@
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f6f8;
+  }
+  
+  .loading-text {
+    font-family: 'Playfair Display', serif; 
+    font-size: 2rem;
+    color: #235c40;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .logo-spinner {
+    width: 100px;
+    height: 100px;
+    background-image: url('/src/assets/images/vaidyavan-logo.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

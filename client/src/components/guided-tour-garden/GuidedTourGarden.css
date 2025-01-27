@@ -1,0 +1,72 @@
+.guided-tour-garden {
+  position: relative;
+  max-width: 1200px; /* Adjust this value to control the max width of the component */
+  margin:auto; /* Centers the component horizontally */
+  padding: 20px; /* Adds padding around the component */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+.momento-tour {
+  width: 100%;
+  height: 600px; /* Adjust the height to fit your needs */
+  border: none;
+  border-radius: 8px; /* Optional: adds rounded corners to the iframe */
+}
+
+  
+  .info-overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    z-index: 10;
+  }
+  
+  .info-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Cinzel', serif; /* Elegant font for headings */
+  }
+  
+  .info-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif; /* Clear, modern font for text */
+  }
+  
+  .info-button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s;
+  }
+  
+  .info-button:hover {
+    background-color: #218838;
+  }
+  
+  .info-button-small {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    z-index: 10;
+  }
+  
+  .info-button-small:hover {
+    background-color: #218838;
+  }
+  
+
+  
